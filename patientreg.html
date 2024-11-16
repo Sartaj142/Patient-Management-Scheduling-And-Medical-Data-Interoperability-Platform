@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient registration</title>
+    <link rel="stylesheet" href="patie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Personal Account</h1>
+            <div class="input-box">
+                <input type="text" class="name" placeholder="Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="number" class="Number" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+                <input type="email" class="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="DOB" id="DOB" required>
+            </div>
+            <div class="input-box">
+                <input type="text" class="gender" placeholder="Gender" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn" id="SendOTP" >Send OTP</button>
+            <div class="otp">
+                 <p>Your OTP will be sent on Your Number.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
